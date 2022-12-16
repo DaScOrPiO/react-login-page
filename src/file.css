@@ -8,7 +8,7 @@ body {
 }
 
 .main-container {
-  background-color: #080855;
+  background: #080855 url(./image/bg-img.jpg) center/cover;
 }
 
 .form-container {
@@ -31,10 +31,12 @@ body {
   margin: auto;
 }
 .form-container .form .input-field-general .button {
-  background-color: #080855;
+  background-color: #0e5897;
   color: #fafcfd;
   padding: 1% 1%;
   border-radius: 0.5rem;
+  outline: none;
+  border: none;
 }
 .form-container .form .input-field-general .button:hover {
   opacity: 0.4;

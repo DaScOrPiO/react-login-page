@@ -1,6 +1,8 @@
 import React from "react";
 import "../file.css";
 import { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Form() {
   const [Input, setInput] = useState({
@@ -24,6 +26,12 @@ export default function Form() {
       mailWarning.innerText = "Correct mail format is example@mail.com";
     }
   };
+
+  const notify = () =>
+    toast.success("Signup was successful", {
+      position: toast.POSITION.TOP_CENTER,
+      autoClose: false,
+    });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -71,7 +79,8 @@ export default function Form() {
     ) {
       document.querySelector(".suscribed").classList.remove("hidden");
       submit_btn.disabled = true;
-      submit_btn.classList.add('disabled')
+      submit_btn.classList.add("disabled");
+      notify();
     } else {
       document.querySelector(".suscribed").classList.add("hidden");
     }
@@ -84,6 +93,10 @@ export default function Form() {
           onSubmit={handleSubmit}
           className="form container-fluid d-flex flex-column align-items-center justify-content-center"
         >
+          <div className="container d-flex justify-contents-center flex-column">
+            <h1 className="text-center">HELLO</h1>
+            <small className="text-center">Sign up to get amazing offers</small>
+          </div>
           <div className="input-field-general container d-flex flex-column align-items-center justify-contents-center">
             <div className="mail-field d-flex flex-column">
               <input
@@ -141,6 +154,7 @@ export default function Form() {
               </small>
             </div>
             <button className="button">Signup</button>
+            <ToastContainer />
           </div>
         </form>
       </div>
