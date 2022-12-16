@@ -1,0 +1,68 @@
+* {
+  font-size: 1em;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.main-container {
+  background-color: #080855;
+}
+
+.form-container {
+  height: 100vh;
+}
+.form-container .form {
+  background-color: #fafcfd;
+  height: 80vh;
+}
+.form-container .form .field {
+  width: 100%;
+  margin-top: 2%;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.form-container .form .input-field-general .mail-field,
+.form-container .form .input-field-general .password-con {
+  width: 80%;
+  margin: auto;
+}
+.form-container .form .input-field-general .button {
+  background-color: #080855;
+  color: #fafcfd;
+  padding: 1% 1%;
+  border-radius: 0.5rem;
+}
+.form-container .form .input-field-general .button:hover {
+  opacity: 0.4;
+  transform: translate(0, 4px);
+  transition: 0.4s ease;
+}
+
+.check-label {
+  font-weight: 600;
+}
+
+.suscribed {
+  color: #ffffff;
+}
+
+.hidden {
+  display: none;
+}
+
+input[type=checkbox] {
+  accent-color: green;
+}
+
+.outline {
+  border: 2px solid red;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}/*# sourceMappingURL=file.css.map */

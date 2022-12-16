@@ -1,0 +1,75 @@
+* {
+  font-size: 1em;
+}
+
+$light_color: #fafcfd;
+$primary_color: #080855;
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.main-container {
+  background-color: $primary_color;
+}
+
+.form-container {
+  height: 100vh;
+
+  .form {
+    background-color: $light_color;
+    height: 80vh;
+
+    .field {
+      width: 100%;
+      margin-top: 2%;
+      padding: 0.4rem 1rem;
+      border-radius: 0.5rem;
+      outline: none;
+    }
+
+    .input-field-general {
+      .mail-field,
+      .password-con {
+        width: 80%;
+        margin: auto;
+      }
+      .button {
+        background-color: $primary_color;
+        color: $light_color;
+        padding: 1% 1%;
+        border-radius: 0.5rem;
+        &:hover {
+          opacity: 0.4;
+          transform: translate(0, 4px);
+          transition: 0.4s ease;
+        }
+      }
+    }
+  }
+}
+.check-label {
+  font-weight: 600;
+}
+
+.suscribed {
+  color: #ffffff;
+}
+
+.hidden {
+  display: none;
+}
+
+input[type="checkbox"] {
+  accent-color: green;
+}
+
+.outline {
+  border: 2px solid red;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
